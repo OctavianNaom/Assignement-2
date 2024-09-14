@@ -37,7 +37,7 @@ public class PostMemoryRepository: IPostRepository
         return Task.CompletedTask;
     }
 
-    public Task GetsignlesAsync(int id)
+    public Task GetSignlesAsync(int id)
     {
         return Task.FromResult(posts.Where(x => x.PostId == id));
     }
