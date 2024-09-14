@@ -35,7 +35,8 @@ public class CliApp
             }
             else if (choice == "2")
             {
-                Console.WriteLine("Manage Posts - Feature not implemented");
+                var managePostsView = new ManagePostsView(_postRepository);
+                await managePostsView.DisplayAsync();
             }
             else if (choice == "0")
             {

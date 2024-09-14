@@ -1,4 +1,4 @@
-﻿/*namespace CLI.UI.ManagePost;
+﻿namespace CLI.UI.ManagePost;
 using RepositoryContracts;
 using Entities;
 using InMemoryRepositories;
@@ -25,10 +25,9 @@ public class CreatePostView
         {
             Title = title,
             Content = content,
-            DateCreated = DateTime.Now
         };
 
-        await _postRepository.AddPost(newPost);
+        await _postRepository.AddPostAsync(newPost);
         Console.WriteLine("Post created successfully!");
     }
-}*/
+}

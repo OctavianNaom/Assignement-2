@@ -6,17 +6,17 @@ public class PostMemoryRepository: IPostRepository
 {
     private static List<Post> posts = new List<Post>();
 
-    public Task<Post> AddAsync(Post post)
+    public Task<Post> AddPostAsync(Post post)
     {
-        post.PostId=posts.Any()?posts.Max(x => x.PostId)+1: 1;
+        post.PostId = posts.Any() ? posts.Max(x => x.PostId) + 1 : 1;
         posts.Add(post);
         return Task.FromResult(post);
     }
 
-    public Task UpdateAsync(Post post)
+    public Task UpdatePostAsync(Post post)
     {
-        Post?existingPost = posts.FirstOrDefault(x => x.PostId == post.PostId);
-        if (existingPost is null)
+        var existingPost = posts.FirstOrDefault(x => x.PostId == post.PostId);
+        if (existingPost == null)
         {
             throw new InvalidOperationException($"Post {post.PostId} not found");
         }
@@ -25,26 +25,26 @@ public class PostMemoryRepository: IPostRepository
         return Task.CompletedTask;
     }
 
-    public Task DeleteAsync(int id)
+    public Task DeletePostAsync(int id)
     {
-        Post? post = posts.SingleOrDefault(x => x.PostId == id);
-        if (post is null)
+        var post = posts.SingleOrDefault(x => x.PostId == id);
+        if (post == null)
         {
             throw new InvalidOperationException($"Post {id} not found");
         }
-
         posts.Remove(post);
         return Task.CompletedTask;
     }
 
-    public Task GetSignlesAsync(int id)
+    public Task<Post> GetPostByIdAsync(int id)
     {
-        return Task.FromResult(posts.Where(x => x.PostId == id));
+        var post = posts.SingleOrDefault(x => x.PostId == id);
+        return Task.FromResult(post);
     }
 
-    public IQueryable<Post> GetManyAsync()
+    public Task<IEnumerable<Post>> GetAllPostsAsync()
     {
-        return posts.AsQueryable();
+        return Task.FromResult<IEnumerable<Post>>(posts);
     }
     public Task<Post> AddPost(Post post)
     {

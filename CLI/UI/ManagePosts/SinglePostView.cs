@@ -1,10 +1,4 @@
-﻿
-
-
-
-
-
-/*namespace CLI.UI.ManagePost;
+﻿namespace CLI.UI.ManagePost;
 using RepositoryContracts;
 using InMemoryRepositories;
 public class SinglePostView
@@ -20,18 +14,18 @@ public class SinglePostView
 
     public async Task DisplayPostAsync()
     {
-        var post = await _postRepository.GetPostById(_postId);
+        // Correct method name
+        var post = await _postRepository.GetPostByIdAsync(_postId);
 
         if (post != null)
         {
-            Console.WriteLine($"ID: {post.PostId}");
             Console.WriteLine($"Title: {post.Title}");
             Console.WriteLine($"Content: {post.Content}");
-            Console.WriteLine($"Date Created: {post.DateCreated}");
+            Console.WriteLine($"Content: {post.Comments}");
         }
         else
         {
             Console.WriteLine("Post not found.");
         }
     }
-}*/
+}

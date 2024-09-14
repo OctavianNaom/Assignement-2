@@ -1,4 +1,4 @@
-﻿/*namespace CLI.UI.ManagePost;
+﻿namespace CLI.UI.ManagePost;
 using RepositoryContracts;
 using InMemoryRepositories;
 public class ListPostView
@@ -13,12 +13,12 @@ public class ListPostView
     public async Task DisplayPostsAsync()
     {
         Console.WriteLine("Listing all posts:");
-
-        var posts = await _postRepository.GetPostsAsync();
+        
+        var posts = await _postRepository.GetAllPostsAsync();
 
         foreach (var post in posts)
         {
-            Console.WriteLine($"ID: {post.Id}, Title: {post.Title}, Created: {post.DateCreated}");
+            Console.WriteLine($"ID: {post.PostId}, Title: {post.Title}");
         }
     }
-}*/
+}
