@@ -7,8 +7,4 @@
         <RootNamespace>Enteties</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\InMemoryRepositories\InMemoryRepositories.csproj" />
-    </ItemGroup>
-
 </Project>
