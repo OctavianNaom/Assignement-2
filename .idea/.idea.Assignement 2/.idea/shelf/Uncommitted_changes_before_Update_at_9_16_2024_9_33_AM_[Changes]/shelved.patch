@@ -1,0 +1,21 @@
+Index: CLI/CLI.csproj
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><Project Sdk=\"Microsoft.NET.Sdk\">\r\n\r\n    <PropertyGroup>\r\n        <OutputType>Exe</OutputType>\r\n        <TargetFramework>net8.0</TargetFramework>\r\n        <ImplicitUsings>enable</ImplicitUsings>\r\n        <Nullable>enable</Nullable>\r\n    </PropertyGroup>\r\n\r\n</Project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/CLI/CLI.csproj b/CLI/CLI.csproj
+--- a/CLI/CLI.csproj	(revision d54937b029d689ddd3d32ea4a178c6a636e92239)
++++ b/CLI/CLI.csproj	(date 1726471981080)
+@@ -7,4 +7,10 @@
+         <Nullable>enable</Nullable>
+     </PropertyGroup>
+ 
++    <ItemGroup>
++      <ProjectReference Include="..\Entities\Entities.csproj" />
++      <ProjectReference Include="..\InMemoryRepositories\InMemoryRepositories.csproj" />
++      <ProjectReference Include="..\RepositoryContracts\RepositoryContracts.csproj" />
++    </ItemGroup>
++
+ </Project>
