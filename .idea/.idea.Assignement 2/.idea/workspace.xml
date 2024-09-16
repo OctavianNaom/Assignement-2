@@ -7,7 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb3b4a8e-702d-4f66-b60b-cfc1d2b6df54" name="Changes" comment="" />
+    <list default="true" id="fb3b4a8e-702d-4f66-b60b-cfc1d2b6df54" name="Changes" comment="saving">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignement 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignement 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLI/UI/ManageUsers/CreateUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CLI/UI/ManageUsers/CreateUserView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLI/UI/ManageUsers/ListUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CLI/UI/ManageUsers/ListUserView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLI/UI/ManageUsers/ManageUsersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CLI/UI/ManageUsers/ManageUsersView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InMemoryRepositories/UserMemoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InMemoryRepositories/UserMemoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RepositoryContracts/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RepositoryContracts/IUserRepository.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +107,7 @@
       <workItem from="1726339621667" duration="25000" />
       <workItem from="1726419098868" duration="185000" />
       <workItem from="1726419295484" duration="27000" />
-      <workItem from="1726467971259" duration="1034000" />
+      <workItem from="1726467971259" duration="8152000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <option name="closed" value="true" />
@@ -149,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726324435678</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="saving">
+      <option name="closed" value="true" />
+      <created>1726472224924</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726472224924</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +190,7 @@
     <MESSAGE value="aa" />
     <MESSAGE value="as" />
     <MESSAGE value="AS" />
-    <option name="LAST_COMMIT_MESSAGE" value="AS" />
+    <MESSAGE value="saving" />
+    <option name="LAST_COMMIT_MESSAGE" value="saving" />
   </component>
 </project>

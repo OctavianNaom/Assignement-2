@@ -1,13 +1,15 @@
-﻿using Entities;
+﻿using System.Collections;
+using Entities;
 
 namespace RepositoryContracts;
 
 public interface IUserRepository
 {
-    Task<User> AddUser(User user);
-    Task UpdateUser(User user);
-    Task DeleteUser(int id);
-    Task<User> GetUserById(int id);
-    IUserRepository GetMany();
-
+    Task<User> AddAsync(User user);
+    Task UpdateAsync(User user);
+    Task DeleteAsync(int id);
+    Task<User> GetSingleAsync(int id);
+    IQueryable<User> GetMany();
+    Task<IEnumerable> GetUsersAsync();
+    Task AddUserAsync(User newUser);
 }

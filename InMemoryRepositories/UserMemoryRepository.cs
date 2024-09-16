@@ -1,4 +1,5 @@
-﻿using System.Reflection.Metadata;
+﻿using System.Collections;
+using System.Reflection.Metadata;
 using Entities;
 using RepositoryContracts;
 namespace InMemoryRepositories;
@@ -7,7 +8,7 @@ public class UserMemoryRepository : IUserRepository
 {
     private static List<User> users = new List<User>();
 
-    public Task<User> AddAsynce(User user)
+    public Task<User> AddAsync(User user)
     {
         user.UserId = users.Any()
             ? users.Max(x => x.UserId) + 1
@@ -41,37 +42,27 @@ public class UserMemoryRepository : IUserRepository
         return Task.CompletedTask;
     }
 
-    public Task<User> GetSingleAsync(int id, User user)
+    public Task<User> GetSingleAsync(int id)
     {
-        return Task.FromResult(user);
+        User? temp = users.SingleOrDefault(u => u.UserId == id);
+        if (temp is null)
+        {
+            throw new InvalidOperationException($"User with id {id} not found");
+        }
+        return Task.FromResult(temp);
     }
 
-    public IQueryable<User> GetManyAsync()
+    public IQueryable<User> GetMany()
     {
         return users.AsQueryable();
     }
-    
-    public Task<User> AddUser(User user)
+
+    public Task<IEnumerable> GetUsersAsync()
     {
         throw new NotImplementedException();
     }
 
-    public Task UpdateUser(User user)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteUser(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<User> GetUserById(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public IUserRepository GetMany()
+    public Task AddUserAsync(User newUser)
     {
         throw new NotImplementedException();
     }
