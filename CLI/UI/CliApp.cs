@@ -1,4 +1,5 @@
 ﻿using CLI.UI.ManagePost;
+using CLI.UI.ManageUsers;
 using RepositoryContracts;
 using InMemoryRepositories;
 namespace CLI.UI;
@@ -31,9 +32,18 @@ public class CliApp
 
             if (choice == "1")
             {
-                Console.WriteLine("Manage Users - Feature not implemented");
+                var manageUsersView = new ManageUsersView(_userRepository);
+                await manageUsersView.DisplayAsync();
             }
-            else if (choice == "2")
+            else if(choice=="3")
+
+            {
+                Console.WriteLine("Choose a User:");
+                break;
+            }
+
+         
+        else if (choice == "2")
             {
                 var managePostsView = new ManagePostsView(_postRepository);
                 await managePostsView.DisplayAsync();

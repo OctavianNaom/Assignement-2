@@ -7,14 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb3b4a8e-702d-4f66-b60b-cfc1d2b6df54" name="Changes" comment="saving">
+    <list default="true" id="fb3b4a8e-702d-4f66-b60b-cfc1d2b6df54" name="Changes" comment="as">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Assignement 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Assignement 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLI/UI/ManageUsers/CreateUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CLI/UI/ManageUsers/CreateUserView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLI/UI/ManageUsers/ListUserView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CLI/UI/ManageUsers/ListUserView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLI/UI/ManageUsers/ManageUsersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CLI/UI/ManageUsers/ManageUsersView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InMemoryRepositories/UserMemoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InMemoryRepositories/UserMemoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RepositoryContracts/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RepositoryContracts/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLI/UI/CliApp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CLI/UI/CliApp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +102,7 @@
       <workItem from="1726339621667" duration="25000" />
       <workItem from="1726419098868" duration="185000" />
       <workItem from="1726419295484" duration="27000" />
-      <workItem from="1726467971259" duration="8152000" />
+      <workItem from="1726467971259" duration="11105000" />
     </task>
     <task id="LOCAL-00001" summary="aa">
       <option name="closed" value="true" />
@@ -165,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726472224924</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="as">
+      <option name="closed" value="true" />
+      <created>1726479224647</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726479224647</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,9 +191,9 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="aa" />
-    <MESSAGE value="as" />
     <MESSAGE value="AS" />
     <MESSAGE value="saving" />
-    <option name="LAST_COMMIT_MESSAGE" value="saving" />
+    <MESSAGE value="as" />
+    <option name="LAST_COMMIT_MESSAGE" value="as" />
   </component>
 </project>
